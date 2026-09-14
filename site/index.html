@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Provider-neutral cloud engineering portfolio: static site, accessible markup, and lab projects for IT roles."
+    />
+    <title>Cloud Engineering Portfolio — Your Name</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#intro">
+          <span class="wordmark-mark" aria-hidden="true"></span>
+          <span class="wordmark-text">Your Name</span>
+        </a>
+        <nav id="site-nav" class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="intro" class="intro" aria-labelledby="intro-heading">
+        <p class="eyebrow">Cloud engineering portfolio</p>
+        <h1 id="intro-heading">Static sites, portable infrastructure, fewer lock-in stories.</h1>
+        <p class="lede">
+          I build and document cloud-adjacent systems that stay hostable anywhere:
+          semantic HTML, boring-reliable CSS, and enough JavaScript to keep the
+          interface honest. This page is the public face of the Cloud Resume
+          Platform — a provider-neutral portfolio for IT and platform work.
+        </p>
+        <p class="intro-note">
+          Replace the name, contact, and profile URLs before you publish.
+          Nothing here is wired to a specific cloud vendor.
+        </p>
+        <p class="intro-actions">
+          <a class="button" href="#projects">View projects</a>
+          <a class="text-link" href="#contact">Contact placeholders</a>
+        </p>
+      </section>
+
+      <section id="skills" class="skills" aria-labelledby="skills-heading">
+        <div class="section-heading">
+          <h2 id="skills-heading">Skills and technology</h2>
+          <p>
+            Grouped by how the work actually lands, not by a vendor certification
+            list.
+          </p>
+        </div>
+        <ul class="skill-groups">
+          <li>
+            <h3>Interface</h3>
+            <ul>
+              <li>Semantic HTML5</li>
+              <li>Responsive CSS</li>
+              <li>Vanilla JavaScript</li>
+              <li>Accessibility (WCAG-minded)</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Delivery</h3>
+            <ul>
+              <li>Static hosting patterns</li>
+              <li>DNS, TLS, caching</li>
+              <li>Git and CI/CD pipelines</li>
+              <li>Infrastructure as Code (concepts)</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Operations</h3>
+            <ul>
+              <li>Linux administration</li>
+              <li>Identity and access basics</li>
+              <li>Logging and health checks</li>
+              <li>Scripted repeatable setups</li>
+            </ul>
+          </li>
+          <li>
+            <h3>IT support</h3>
+            <ul>
+              <li>Ticketing workflows</li>
+              <li>Runbooks and escalation</li>
+              <li>Endpoint hygiene</li>
+              <li>Light automation</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <h2 id="projects-heading">Projects</h2>
+          <p>
+            Labs and case studies. Each card is written so it can live on any
+            static host.
+          </p>
+        </div>
+
+        <article class="card card-case-study" aria-labelledby="crp-heading">
+          <p class="card-eyebrow">Case study</p>
+          <h3 id="crp-heading">Cloud Resume Platform</h3>
+          <p>
+            A static, accessible portfolio that proves cloud-engineering habits
+            without dragging a backend, a framework, or a vendor SDK into the
+            frontend. The site is the artifact: markup, layout, and deployment
+            shape — not a screenshot of a console.
+          </p>
+          <dl class="meta-list">
+            <div>
+              <dt>Problem</dt>
+              <dd>
+                Most “cloud resume” demos couple the page to one provider’s
+                runtime, counters, or auth. That makes the portfolio a product
+                demo, not a portable engineering sample.
+              </dd>
+            </div>
+            <div>
+              <dt>Approach</dt>
+              <dd>
+                Semantic landmarks, skip link, keyboard-visible focus, and a
+                responsive card layout. No build step. Personal data stays as
+                placeholders. Hosting can be object storage, a static host, or
+                a plain web server.
+              </dd>
+            </div>
+            <div>
+              <dt>Constraints</dt>
+              <dd>
+                HTML, CSS, and a small script only. No React, no Node toolchain,
+                no database, no cloud-specific client libraries.
+              </dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>Active — this homepage is the current revision.</dd>
+            </div>
+          </dl>
+          <p>
+            <a class="text-link" href="#intro">Read the live site (this page)</a>
+          </p>
+        </article>
+
+        <div class="card-grid">
+          <article class="card" aria-labelledby="helpdesk-heading">
+            <p class="card-eyebrow">
+              <span class="badge">Planned</span>
+              Lab
+            </p>
+            <h3 id="helpdesk-heading">Help Desk / automation lab</h3>
+            <p>
+              A future workspace for IT support flows: intake, triage notes,
+              repeatable fixes, and small automations that remove copy-paste
+              work from a queue. Not a SaaS clone — a documented lab with
+              scripts and runbooks.
+            </p>
+            <ul class="card-points">
+              <li>Ticket lifecycle samples and escalation paths</li>
+              <li>Scripted checks instead of one-off tribal knowledge</li>
+              <li>Clear boundary: no production credentials in the repo</li>
+            </ul>
+            <p class="card-status">Coming later. Card is a placeholder so the roadmap is visible.</p>
+          </article>
+
+          <article class="card" aria-labelledby="labs-heading">
+            <p class="card-eyebrow">
+              <span class="badge">Placeholder</span>
+              Lab
+            </p>
+            <h3 id="labs-heading">Platform labs</h3>
+            <p>
+              Slot for additional provider-neutral work: IaC modules, static
+              delivery pipelines, identity diagrams, or incident notes. Swap
+              this copy when a real lab ships.
+            </p>
+            <ul class="card-points">
+              <li>Keep examples portable across clouds</li>
+              <li>Prefer diagrams and configs over vendor screenshots</li>
+              <li>Document failure modes, not just happy-path deploys</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <div class="section-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <p>
+            Placeholders only. Point them at your real profiles before this
+            goes live.
+          </p>
+        </div>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label" id="label-email">Email</span>
+            <a href="mailto:you@example.com" aria-labelledby="label-email contact-email" id="contact-email">you@example.com</a>
+          </li>
+          <li>
+            <span class="contact-label" id="label-github">GitHub</span>
+            <a
+              href="https://github.com/your-username"
+              rel="noopener noreferrer"
+              aria-labelledby="label-github contact-github"
+              id="contact-github"
+              >github.com/your-username</a
+            >
+          </li>
+          <li>
+            <span class="contact-label" id="label-linkedin">LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              rel="noopener noreferrer"
+              aria-labelledby="label-linkedin contact-linkedin"
+              id="contact-linkedin"
+              >linkedin.com/in/your-profile</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Cloud Resume Platform. Static HTML, CSS, and JavaScript. No vendor
+        runtime on this page.
+      </p>
+      <p>
+        <small>© <span data-year>2026</span> Your Name. Replace this line.</small>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

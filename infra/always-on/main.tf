@@ -23,4 +23,3 @@ resource "azurerm_static_web_app" "portfolio" {
     lifecycle   = "always-on"
   }
 }
-

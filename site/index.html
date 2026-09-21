@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
+      content="Cloud engineering portfolio: PitWall F1 dashboard, Azure Static Web Apps, Docker IT operations, Azure RBAC, and PowerShell automation."
 
       content="Cloud engineering portfolio: Azure Static Web Apps, Docker IT operations, Azure RBAC, and PowerShell automation."
     />
@@ -42,13 +43,14 @@
     <main id="main">
       <section id="intro" class="intro" aria-labelledby="intro-heading">
         <p class="eyebrow">Cloud engineering portfolio</p>
+        <h1 id="intro-heading">Azure apps, identity labs, and IT operations you can inspect.</h1>
 
         <h1 id="intro-heading">Azure delivery, identity labs, and IT operations you can inspect.</h1>
         <p class="lede">
-          This site is the public face of the work: a cloud-hosted portfolio,
-          a Docker help-desk lab, an Azure RBAC exercise that tests real
-          data-plane access, and PowerShell that CI actually runs. Recruiters
-          get the artifact, not a console screenshot.
+          This site is the public face of the work: PitWall, a serverless F1
+          dashboard on Azure; a Docker help-desk lab; an Azure RBAC exercise
+          that tests real data-plane access; and PowerShell that CI actually
+          runs. Recruiters get the artifact, not a console screenshot.
         </p>
         <p class="intro-actions">
           <a class="button" href="#projects">View projects</a>
@@ -84,9 +86,9 @@
             <h3>Cloud and delivery</h3>
             <ul>
               <li>Azure Static Web Apps</li>
+              <li>Azure Functions</li>
               <li>Terraform / Infrastructure as Code</li>
               <li>GitHub Actions CI/CD</li>
-              <li>HTML, CSS, JavaScript</li>
             </ul>
           </li>
           <li>
@@ -125,6 +127,44 @@
         </div>
 
         <div class="card-grid">
+          <article class="card" aria-labelledby="pitwall-heading">
+            <p class="card-eyebrow">
+              <span class="badge">Live</span>
+              Serverless / Azure / APIs
+            </p>
+            <h3 id="pitwall-heading">PitWall</h3>
+            <p>
+              Serverless Formula 1 dashboard on Azure, backed by historical
+              OpenF1 data. The browser never calls OpenF1; visitors read a
+              Function API that serves a private Blob cache.
+            </p>
+            <ul class="card-points">
+              <li>Timer snapshot plus cache-aside race details in Blob Storage</li>
+              <li>
+                Standalone Function App for the timer trigger, Static Web App on
+                the Free SKU
+              </li>
+              <li>
+                OpenF1 calls paced and cached so page views do not burn the
+                upstream budget
+              </li>
+            </ul>
+            <p class="card-actions">
+              <a
+                class="text-link"
+                href="https://github.com/Timothy-itayi/PitWall"
+                rel="noopener noreferrer"
+                >View repository</a
+              >
+              <a
+                class="text-link"
+                href="https://jolly-mud-0b0e27600.5.azurestaticapps.net"
+                rel="noopener noreferrer"
+                >Open live site</a
+              >
+            </p>
+          </article>
+
           <article class="card" aria-labelledby="swa-heading">
             <p class="card-eyebrow">
               <span class="badge">Live</span>

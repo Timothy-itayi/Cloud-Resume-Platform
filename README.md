@@ -60,6 +60,23 @@ Storage existed only so the access test had something to fail against. `Storage 
 | [CLI evidence](https://github.com/Timothy-itayi/azure-rbac-storage-lab/blob/main/docs/evidence.md) | Read allowed, write denied, role change, cleanup |
 | [Security notes](https://github.com/Timothy-itayi/azure-rbac-storage-lab/blob/main/docs/security.md) | Lab controls vs a real tenant |
 
+### [M365, Entra & Intune Help Desk Lab](https://github.com/Timothy-itayi/m365-intune-helpdesk-lab)
+
+A small-business IT environment run the way a service desk or MSP runs one, on a Microsoft 365 trial tenant: tenant setup, users and dynamic groups, MFA and Conditional Access, Intune policies, and PowerShell automation for joiners and leavers.
+
+PowerShell runs in a Docker container on a MacBook, not on macOS. Scope is phases 1 to 5 plus the Docker and PowerShell setup. Ticketing was covered in an earlier project, so tickets, incident write-ups, and runbooks are not the focus.
+
+Limits: the Intune policies (compliance, configuration, update ring, Windows Terminal app) are configuration only. None was applied to or evaluated against a device, and automatic enrolment was never triggered. Conditional Access enforcement is not shown in the evidence. The tenant was a temporary lab and has been torn down; users are fictional, and the write-ups and screenshots are the record.
+
+| Page | What it covers |
+| --- | --- |
+| [Phase notes](https://github.com/Timothy-itayi/m365-intune-helpdesk-lab/blob/main/docs/phases/01-tenant.md) | Objective, what was done, evidence, and limits per phase |
+| [Decisions](https://github.com/Timothy-itayi/m365-intune-helpdesk-lab/blob/main/docs/decisions/README.md) | Why things were built the way they were |
+| [Scripts](https://github.com/Timothy-itayi/m365-intune-helpdesk-lab/blob/main/scripts/README.md) | New-Starter, Remove-Leaver, Get-TenantReport |
+| [Setup incidents](https://github.com/Timothy-itayi/m365-intune-helpdesk-lab/blob/main/docs/incidents/00-setup.md) | Two setup failures, root cause, and resolution |
+
+Evidence screenshots live in [m365-intune-helpdesk-lab `evidence/`](https://github.com/Timothy-itayi/m365-intune-helpdesk-lab/tree/main/evidence).
+
 ### [PowerShell IT Support Toolkit](https://github.com/Timothy-itayi/powershell-it-support-toolkit)
 
 On-demand diagnostics for the checks support engineers already repeat: DNS, ICMP, TCP, HTTP, and obvious account-access mistakes.

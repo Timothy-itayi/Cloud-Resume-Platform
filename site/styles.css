@@ -289,6 +289,19 @@ a:hover {
   display: grid;
 }
 
+.intro-title,
+.intro-tag {
+  display: block;
+}
+
+.intro-tag {
+  margin-top: 0.55em;
+  font-size: 0.48em;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  opacity: 0.78;
+}
+
 .intro-heading-ink {
   grid-area: 1 / 1;
   display: grid;
@@ -614,7 +627,12 @@ a:hover {
   }
 
   .intro:has(.atmosphere) h1 {
-    max-width: 13ch;
+    max-width: none;
+    font-size: clamp(2rem, 0.6rem + 2.7vw, 3.4rem);
+  }
+
+  .intro-title {
+    white-space: nowrap;
   }
 
   .intro:has(.atmosphere) .intro-aside {

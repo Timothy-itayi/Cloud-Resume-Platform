@@ -2,7 +2,7 @@
 
 Static website that houses the cloud and IT work. Azure Static Web Apps on the Free SKU. Terraform creates the resource. GitHub Actions deploys `site/` on push to `main`.
 
-This repo is the index. It does not host PitWall, run Docker, talk to Entra ID, or execute PowerShell checks. Those live in the repositories below.
+This repo is the index. It does not host PitWall, run Docker, talk to Okta or Entra ID, or execute PowerShell checks. Those live in the repositories below.
 
 ## Documentation
 
@@ -13,6 +13,26 @@ This repo is the index. It does not host PitWall, run Docker, talk to Entra ID, 
 | [Deploy workflow](.github/workflows/deploy-site.yml) | GitHub Actions upload to Azure |
 
 ## Projects
+
+### [Okta IAM Lifecycle Lab](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab) — flagship
+
+Joiner-mover-leaver automation for Lanternfield Goods, a fictional retailer, on an Okta Workforce Identity trial org.
+
+The HR source is a JSON file in Git. A `hr-sync` script diffs it and drives Okta Workflows for joiners, movers, and leavers. Okta holds the users, group rules, and policies, and provisions users and groups into Rostr, a mock rostering app, over SCIM. Rostr signs in with SAML and OIDC. Governance covers access requests, an access review, stale-access and OAuth reviews, and an audit pack. Six failure drills are written up as incidents. A stretch phase adds a leave hub in Rostr where Okta groups decide which screen a person sees.
+
+This is a learning lab, not production Okta experience. Every claim in that repo points at a file in it.
+
+| Page | What it covers |
+| --- | --- |
+| [Lab report](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab/blob/main/docs/report.md) | The full account, written for a reader who was not in the lab |
+| [Foundation](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab/blob/main/docs/phases/01-foundation.md) | Staff, group rules, session policies, help desk role, MFA reset |
+| [SaaS onboarding](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab/blob/main/docs/phases/02-onboarding.md) | SAML and OIDC sign-in to Rostr |
+| [SCIM provisioning](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab/blob/main/docs/phases/03-scim.md) | User and group push into Rostr |
+| [Joiner, mover, leaver](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab/blob/main/docs/phases/04-jml.md) | HR diff, Workflows, downstream effects |
+| [Governance](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab/blob/main/docs/phases/05-governance.md) | Access Request, access review, Stale-Access, OAuth review, audit pack |
+| [Incidents](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab/tree/main/docs/incidents) | Failure drills, root cause, and resolution |
+
+Evidence screenshots and log extracts live in [okta-iam-lifecycle-lab `evidence/`](https://github.com/Timothy-itayi/okta-iam-lifecycle-lab/tree/main/evidence).
 
 ### [PitWall](https://github.com/Timothy-itayi/PitWall)
 

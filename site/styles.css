@@ -296,7 +296,7 @@ a:hover {
 
 .intro-tag {
   margin-top: 0.55em;
-  font-size: 0.48em;
+  font-size: 0.44em;
   font-style: italic;
   letter-spacing: -0.01em;
   opacity: 0.78;
@@ -622,13 +622,15 @@ a:hover {
   }
 
   .intro:has(.atmosphere) .intro-copy {
+    grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.8fr);
     column-gap: 4rem;
-    align-items: center;
+    align-content: center;
+    align-items: start;
   }
 
   .intro:has(.atmosphere) h1 {
     max-width: none;
-    font-size: clamp(2rem, 0.6rem + 2.7vw, 3.4rem);
+    font-size: clamp(2.2rem, 0.8rem + 3.6vw, 4.4rem);
   }
 
   .intro-title {
@@ -636,7 +638,7 @@ a:hover {
   }
 
   .intro:has(.atmosphere) .intro-aside {
-    align-self: center;
+    align-self: start;
     align-content: start;
     max-width: 32rem;
     justify-self: end;
